@@ -7,7 +7,7 @@ let package = Package(
     platforms: [ .macOS(.v12), .iOS(.v15)], // Added platforms for building docc documentation to work
     products: [.library(name: "Tonic", targets: ["Tonic"])],
     targets: [
-        .target(name: "Tonic", swiftSettings: [.unsafeFlags(["-enable-testing", "-g"])]),
+        .target(name: "Tonic"),
         .testTarget(name: "TonicTests", dependencies: ["Tonic"]),
     ]
 )
